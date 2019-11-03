@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <section id="one">
+    <h3>Calculadora de valores</h3><br>
+    </section>
+
+    <script>
+        function speedConverter(valNum) {
+            document.getElementById("KPH").innerHTML=valNum*1.609344;
+        }
+    </script>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(eerrr.jpg);
+        }
+    </style>
+
+<div id="au">
+    <fieldset>
+    <legend>
+    <p>Calcular velocidade</p>
+    </legend>
+    <p><label>MPH</label>
+    <input id="MPH" type="number" placeholder="MPH" oninput="speedConverter(this.value)" onchange="speedConverter(this.value)">
+    </p>
+    <p>KPH: <span id="KPH"></span></p>
+              
+
+    </fieldset>
+</div> 
+<footer id="six">
+    <a href="https://www.facebook.com/jefinhosnight ">
+        <a href="https://www.facebook.com/jefinhosnight " target="_blank">Desenvolvido por Jeferson Oliveira</a>
+</footer> 
+<center><a href="conversor.html">Voltar</a></center>
+</body>
+</html>

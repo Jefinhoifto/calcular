@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <section id="one">
+    <h3>Calculadora de valores</h3><br>
+    </section>
+    <script>
+
+    function termo(){
+                
+    var cel = document.getElementById("Cel").value;
+    var fah = document.getElementById("Fahre").value;
+    var kel = document.getElementById("Kel").value;
+        
+        if(!!cel){
+            document.getElementById("Kel").value = parseFloat(cel) + 273;
+            document.getElementById("Fahre").value = (parseFloat(cel)*1.8)+32;
+        }else if(!!kel){
+            document.getElementById("Cel").value = (parseFloat(kel) - 273.15);
+            document.getElementById("Fahre").value = (parseFloat(kel)(parseFloat((kel) - 273.15))*1.8)+32;  
+        }else if(!!fah){
+            document.getElementById("Cel").value = (parseFloat(fah)-32)/1.8;
+            document.getElementById("Kel").value = ((parseFloat(fah)-32)/1.8)+273.15;
+            } 
+        
+            }
+        
+          </script> 
+</head>
+
+<body>
+    <style>
+    body{
+        background-image: url(eerrr.jpg);
+    }
+    </style>
+
+<div id="au">
+    <fieldset>
+    <legend>
+        <p>Temperatura em °C</p>
+    </legend>
+        <input type="text" id="Cel">
+    </fieldset>
+</div>
+<div id="ei">
+    <fieldset>
+    <legend>
+        <p>Temperatura em °F</p>
+    </legend>
+        <input type="text" id="Fahre">
+    </fieldset>
+</div>
+<div id="ui">
+    <fieldset>
+    <legend>
+        <p>Temperatura em °K</p>
+    </legend>
+    <input type="text" id="Kel">
+    </fieldset>
+</div>
+<input type="button" onclick="termo()" value="Gerar">
+
+<footer id="six">
+        <a href="https://www.facebook.com/jefinhosnight " target="_blank">Desenvolvido por Jeferson Oliveira</a>
+    </footer>
+    <center><a href="conversor.html">Voltar</a></center>
+</body>
+</html>
+    

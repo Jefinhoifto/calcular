@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <section id="one">
+    <h3>Calculadora de valores</h3><br>
+    </section>
+
+    <script>
+     function conversor(valNum) {
+        document.getElementById("PesMed").innerHTML = valNum / 3.2808;
+     }
+     function conversor2(valNum2){
+        document.getElementById("KilMet").innerHTML=valNum2/1000;
+    }
+     function LengthConverter(valNum3) {
+        document.getElementById("milhas").innerHTML=valNum3*0.0000062137;
+    }
+    function LengthConverter(valNum4) {
+        document.getElementById("outputMeters").innerHTML=valNum4/0.00062137;
+    }      
+    </script>
+
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(eerrr.jpg);
+        }
+    </style>
+
+    <fieldset>
+    <p>Pés
+        <input id="Pes" type="number" placeholder="Digite aqui.."
+        oninput="conversor(this.value)" onchange="conversor(this.value)">
+    </p>
+    <p>Para metros: <span id="PesMed"></span></p>
+
+    </fieldset>
+    <fieldset>
+        <label>Metros:</label>
+        <input id="Kmet" type="number" placeholder="Digite aqui.." oninput="conversor2(this.value)" 
+        onchange="conversor2(this.value)">
+        </p>
+        <p>Para Kilômetros: <span id="KilMet"></span></p>
+    </fieldset>
+    <fieldset>
+        <label>cm</label>
+        <input id="cm" type="number" placeholder="cm" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+        </p>
+        <p>Por milhas: <span id="milhas"></span></p>
+    </fieldset>
+    <fieldset>
+        <p>
+        <label>Milhas</label>
+        <input id="inputMiles" type="number" placeholder="Miles" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+        </p>
+        <p>Por metros: <span id="outputMeters"></span></p>
+    </fieldset>
+
+<footer id="six">
+    <a href="https://www.facebook.com/jefinhosnight " target="_blank">Desenvolvido por Jeferson Oliveira</a>
+   
+</footer>
+<center><a href="conversor.html">Voltar</a></center>         
+</body>
+</html>
+            

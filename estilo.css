@@ -1,0 +1,43 @@
+#one h3{
+    font-size: 100%;
+    text-align: center;
+    margin: 2px;
+    padding: 10px;
+}
+#two{
+    font-size: 100%;
+    
+    
+   
+}
+#tree{
+    font-size: 100%;
+    
+  
+}
+#for{
+    font-size: 100%;
+    
+    
+}
+#five{
+    font-size: 100%;
+    
+}
+
+#six {
+    font-size: 100%;
+    position: absolute;
+    bottom: 0;  
+}
+
+#my a{
+    text-transform: uppercase;
+    padding: 10px;
+    position: relative;
+    
+}
+#my a:hover{
+    text-decoration: none;
+    color: floralwhite;
+}

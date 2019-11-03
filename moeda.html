@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <section id="one">
+    <h3>Calculadora de valores</h3><br>
+    </section>
+    
+    <script>
+    
+        function moeda(){
+            var dollar = 3.99;
+        
+            valor = parseFloat(document.getElementById("Real").value);			
+                    
+            if(document.getElementById("opções").value="US$"){
+                 document.getElementById("valorFinal").innerHTML = (valor*dollar).toFixed(2);			
+                        
+            }					
+        }             
+            
+    </script>
+</head>
+<body>
+         
+<style>
+    body{
+background-image: url(eerrr.jpg);
+}
+    </style>
+<div id="au">
+    <fieldset>
+    <legend>
+        <p>Calcular Moeda</p> 
+    </legend>
+    <select id="opções">
+        <option value="US$">Dólar Americano</option>
+    </select><br><br>
+    <b>Valor em Real:<input type="number" id="Real">
+        <input type="button" value="Converter" id="btn1" onClick="moeda()" /><br><br>
+        <label id="resultado">Resultado:</label>
+        <span id="valorFinal"></span><br>
+        <input type="reset" value="Limpar" id="valorFinal">
+    </fieldset>
+        
+</div>
+<div id="div4">
+        
+    </div><br />
+    <footer id="six">
+            <a href="https://www.facebook.com/jefinhosnight " target="_blank">Desenvolvido por Jeferson Oliveira</a>
+    </footer>
+    <center><a href="conversor.html">Voltar</a></center>
+</body>
+</html>
